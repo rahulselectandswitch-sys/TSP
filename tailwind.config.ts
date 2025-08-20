@@ -19,7 +19,6 @@ export default {
       fontFamily: {
         body: ['Alegreya', 'serif'],
         headline: ['Alegreya', 'serif'],
-        code: ['monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
