@@ -7,10 +7,10 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Music2 } from 'lucide-react';
 
 const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#gallery', label: 'Gallery' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -38,7 +38,7 @@ export function Header() {
         </nav>
         <div className="flex items-center space-x-4">
            <Button asChild className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="#contact">Book Now</Link>
+            <Link href="/contact">Book Now</Link>
           </Button>
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -61,7 +61,7 @@ export function Header() {
                     </Link>
                   ))}
                   <Button asChild className="mt-4 bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => setIsOpen(false)}>
-                    <Link href="#contact">Book Now</Link>
+                    <Link href="/contact">Book Now</Link>
                   </Button>
                 </div>
               </SheetContent>

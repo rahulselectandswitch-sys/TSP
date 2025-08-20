@@ -24,7 +24,7 @@ export function Hero() {
           A remarkable unplugged ensemble delivering high-class performances rarely seen in the country's music scene.
         </p>
         <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
-          <Link href="#contact">Book The Band</Link>
+          <Link href="/contact">Book The Band</Link>
         </Button>
       </div>
     </section>
