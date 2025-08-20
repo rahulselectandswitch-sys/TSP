@@ -7,7 +7,7 @@ export function Hero() {
     <section id="home" className="relative h-screen min-h-[600px] w-full flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://storage.googleapis.com/aif-stg-prompt-gallery/3b8d6a86-455b-4258-a53c-237c151a6652.jpeg"
           alt="The Suryansh Project performing live on stage"
           fill
           className="object-cover"
