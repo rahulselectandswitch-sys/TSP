@@ -1,0 +1,29 @@
+import { Instagram, Facebook, Youtube, Twitter } from 'lucide-react';
+import Link from 'next/link';
+
+export function Footer() {
+  const socialLinks = [
+    { name: 'Instagram', icon: Instagram, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: '#' },
+    { name: 'YouTube', icon: Youtube, href: '#' },
+    { name: 'Twitter', icon: Twitter, href: '#' },
+  ];
+
+  return (
+    <footer className="bg-secondary">
+      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="flex justify-center space-x-6">
+          {socialLinks.map((social) => (
+            <Link key={social.name} href={social.href} className="text-muted-foreground hover:text-primary transition-colors">
+              <social.icon className="h-6 w-6" />
+              <span className="sr-only">{social.name}</span>
+            </Link>
+          ))}
+        </div>
+        <p className="mt-8 text-center text-xs text-muted-foreground">
+          &copy; {new Date().getFullYear()} THE SURYANSH PROJECT. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
