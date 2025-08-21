@@ -15,38 +15,40 @@ const navLinks = [
 ];
 
 const BandLogo = () => (
-    <svg
-      version="1.0"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 1920 1080"
-      preserveAspectRatio="xMidYMid meet"
-      className="text-primary"
-      fill="currentColor"
-    >
-      <g
-        transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-        stroke="none"
-      >
-        <path
-          d="M5617 4518 c-41 -163 -41 -1043 0 -1206 10 -40 22 -10 35 88 18 132
-  18 898 0 1030 -13 98 -25 128 -35 88z"
-        />
-        <path
-          d="M5896 4525 c-30 -79 -43 -884 -18 -1103 20 -171 34 -171 54 2 15 135
-  15 849 0 984 -13 111 -24 148 -36 117z"
-        />
-        <path
-          d="M13196 4525 c-30 -78 -43 -884 -18 -1103 20 -171 34 -171 54 2 16
-  135 15 848 0 984 -13 112 -24 148 -36 117z"
-        />
-        <path
-          d="M13477 4533 c-22 -35 -32 -227 -32 -618 0 -403 11 -595 34 -618 51
-  -51 62 1090 12 1226 -4 11 -11 16 -14 10z"
-        />
-      </g>
-    </svg>
+    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center p-1">
+        <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 1920 1080"
+        preserveAspectRatio="xMidYMid meet"
+        className="text-primary-foreground"
+        fill="currentColor"
+        >
+        <g
+            transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
+            stroke="none"
+        >
+            <path
+            d="M5617 4518 c-41 -163 -41 -1043 0 -1206 10 -40 22 -10 35 88 18 132
+    18 898 0 1030 -13 98 -25 128 -35 88z"
+            />
+            <path
+            d="M5896 4525 c-30 -79 -43 -884 -18 -1103 20 -171 34 -171 54 2 15 135
+    15 849 0 984 -13 111 -24 148 -36 117z"
+            />
+            <path
+            d="M13196 4525 c-30 -78 -43 -884 -18 -1103 20 -171 34 -171 54 2 16
+    135 15 848 0 984 -13 112 -24 148 -36 117z"
+            />
+            <path
+            d="M13477 4533 c-22 -35 -32 -227 -32 -618 0 -403 11 -595 34 -618 51
+    -51 62 1090 12 1226 -4 11 -11 16 -14 10z"
+            />
+        </g>
+        </svg>
+    </div>
   );
 
 export function Header() {
