@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Alegreya', 'serif'],
-        headline: ['Alegreya', 'serif'],
+ headline: ['Merriweather', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -55,6 +55,7 @@ export default {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         chart: {
+ brown: '#A0522D',
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
           '3': 'hsl(var(--chart-3))',

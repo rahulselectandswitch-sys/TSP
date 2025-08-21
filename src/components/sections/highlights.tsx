@@ -24,7 +24,7 @@ export function Highlights() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-            Why We Stand Out
+            Standing Out in Sound
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Discover what makes The Suryansh Project a premier choice for live unplugged music.

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Suryansh Unplugged',
+  title: 'Home| The Suryansh Project',
   description: 'A remarkable unplugged ensemble delivering high-class performances rarely seen in the country\'s music scene.',
 };
 
