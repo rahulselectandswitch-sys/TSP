@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Home| The Suryansh Project',
-  description: 'A remarkable unplugged ensemble delivering high-class performances rarely seen in the country\'s music scene.',
+  description: 'The remarkable unplugged ensemble delivering high-class performances rarely seen in the country\'s music scene.',
 };
 
 export default function RootLayout({
