@@ -41,8 +41,7 @@ export function Header() {
           <BandLogo />
           <span className="font-serif text-xl text-primary sm:text-2xl">
             <span className="text-brown">||</span>
-            THE SURYANSH PROJECT
-
+            <span className="text-black">THE SURYANSH PROJECT</span>
             <span className="text-brown-700">||</span>
           </span>
         </Link>

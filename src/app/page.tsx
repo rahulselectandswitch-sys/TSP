@@ -11,8 +11,8 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Highlights />
         <MusicalStyle />
+        <Highlights />
         <Albums />
       </main>
       <Footer />

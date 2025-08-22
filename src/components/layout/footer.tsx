@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export function Footer() {
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/thesuryanshproject' },
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'YouTube', icon: Youtube, href: '#' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/thesuryanshproject/' },
+    { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/suryanshproject/' },
+    { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@THESURYANSHPROJECT/' },
   ];
 
   return (

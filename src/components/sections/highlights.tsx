@@ -5,25 +5,25 @@ const highlights = [
     icon: Gem,
     title: 'Exceptional Talent',
     description: 'Our ensemble is composed of seasoned musicians, each bringing a unique flair and mastery to their craft.',
-    videoId: 'VIDEO_ID_1', // Replace with your YouTube video ID
+    videoId: 'LRVeMzzPans',
   },
   {
     icon: Music,
     title: 'Versatile Musical Range',
     description: 'From timeless classics to modern hits, our repertoire spans genres and eras, tailored to any occasion.',
-    videoId: 'VIDEO_ID_2', // Replace with your YouTube video ID
+    videoId: 'WT1o011upGA',
   },
   {
     icon: Users,
     title: 'Flexible Configurations',
     description: 'We offer scalable setups, from an intimate duo to a full five-piece band, to perfectly match your event\'s ambiance.',
-    videoId: 'VIDEO_ID_3', // Replace with your YouTube video ID
+    videoId: 'jini5G6nk1E',
   },
 ];
 
 export function Highlights() {
   return (
-    <section id="highlights" className="py-16 sm:py-24 bg-card">
+    <section id="highlights" className="py-8 sm:py-12 bg-card">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl">
