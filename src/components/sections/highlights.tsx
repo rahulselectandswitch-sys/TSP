@@ -3,21 +3,21 @@ import { Gem, Music, Users } from 'lucide-react';
 const highlights = [
   {
     icon: Gem,
-    title: 'Exceptional Talent',
-    description: 'Our ensemble is composed of seasoned musicians, each bringing a unique flair and mastery to their craft.',
-    videoId: 'LRVeMzzPans',
+    title: 'POPMIX ',
+    description: 'Our Seasoned Mighty uniting unique mastery and flair.',
+    videoId: 'YzVgN6q_E0A',
   },
   {
     icon: Music,
     title: 'Versatile Musical Range',
-    description: 'From timeless classics to modern hits, our repertoire spans genres and eras, tailored to any occasion.',
-    videoId: 'WT1o011upGA',
+    description: 'Spanning genres and eras, from classics to hits, tailored for every occasion',
+    videoId: 'Ae_U1YT03gY',
   },
   {
     icon: Users,
     title: 'Flexible Configurations',
-    description: 'We offer scalable setups, from an intimate duo to a full five-piece band, to perfectly match your event\'s ambiance.',
-    videoId: 'jini5G6nk1E',
+    description: 'Scalable setups from duo to full band, tailored to match every event.\'s ambiance.',
+    videoId: 'AesTwpDDsNU',
   },
 ];
 
@@ -48,10 +48,17 @@ export function Highlights() {
                 <div className="absolute inset-0 bg-black/60 transition-colors group-hover:bg-black/70" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center text-white">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/80 text-primary-foreground mb-4 border-2 border-primary-foreground/50">
-                        <highlight.icon className="h-6 w-6" aria-hidden="true" />
+                      <a
+                      href={`https://www.youtube.com/watch?v=${highlight.videoId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/80 text-primary-foreground border-2 border-primary-foreground/50"
+                      >
+                      <highlight.icon className="h-6 w-6" aria-hidden="true" />
+                      </a>
                     </div>
-                    <h3 className="text-2xl font-bold font-headline">{highlight.title}</h3>
-                    <p className="mt-2 text-base text-primary-foreground/90 max-w-xs">{highlight.description}</p>
+ <h3 className="text-2xl font-bold font-headline">{highlight.title}</h3>
+ <p className="mt-2 text-base text-primary-foreground/90 max-w-xs">{highlight.description}</p>
                 </div>
               </div>
             ))}

@@ -4,19 +4,19 @@ const albums = [
   {
     title: 'Echoes in Silence',
     releaseDate: 'October 26, 2023',
-    videoId: 'LRVeMzzPans',
+    videoId: 'Ae_U1YT03gY',
     tracks: ['Serenade in Blue', 'Golden Hour Echo', 'City Lights Whisper', 'Fading Embers', 'Unspoken Melodies'],
   },
   {
     title: 'Urban Soulscape',
     releaseDate: 'March 15, 2022',
-    videoId: 'WT1o011upGA',
+    videoId: 'LRVeMzzPans',
     tracks: ['Downtown Groove', 'Rooftop Dreams', 'Neon Heartbeat', 'Asphalt Ballad', 'Morning Commute'],
   },
   {
     title: 'The Fireside Sessions',
     releaseDate: 'November 01, 2020',
-    videoId: 'jini5G6nk1E',
+    videoId: 'rywTJcChjIM',
     tracks: ['Warmth of the Chord', 'Crackling Vinyl', 'Story in a Song', 'Hearthside Harmony', 'Winter\'s Lullaby'],
   },
 ];

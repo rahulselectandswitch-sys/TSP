@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import Link from 'next/link';
+import Link from 'next/link'; // Import Link
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
@@ -9,8 +9,16 @@ import { Menu } from 'lucide-react';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/gallery', label: 'Gallery' },
+  { href: '/gallery', label: 'Gallery' }, // Removed duplicate key
   { href: '/contact', label: 'Contact' },
+];
+
+import { Instagram, Facebook, Youtube } from 'lucide-react';
+
+const socialLinks = [
+  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/thesuryanshproject/' },
+  { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/suryanshproject/' },
+  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@THESURYANSHPROJECT/' },
 ];
 
 const BandLogo = () => (
@@ -20,7 +28,7 @@ const BandLogo = () => (
         xmlns="http://www.w3.org/2000/svg"
         width="369"
         height="314"
-        viewBox="0 0 300 300"
+        viewBox="0 0 350 300"
       >
 <path d="M0 0 C121.77 0 243.54 0 369 0 C369 103.62 369 207.24 369 314 C247.23 314 125.46 314 0 314 C0 210.38 0 106.76 0 0 Z " fill="#000000" transform="translate(0,0)"/>
 <path d="M0 0 C5.51201689 2.12919064 8.77322053 5.32621311 11.40625 10.546875 C12.32419327 14.3394301 12.11254636 18.11715054 12 22 C13.90458984 21.96519531 13.90458984 21.96519531 15.84765625 21.9296875 C26.47585807 21.79709395 36.50111085 22.32017774 47 24 C47 19.71 47 15.42 47 11 C45.65164062 11.02320313 44.30328125 11.04640625 42.9140625 11.0703125 C41.15104719 11.08906798 39.38802591 11.10726842 37.625 11.125 C36.73554688 11.14175781 35.84609375 11.15851562 34.9296875 11.17578125 C34.07890625 11.18222656 33.228125 11.18867187 32.3515625 11.1953125 C31.17327881 11.21102295 31.17327881 11.21102295 29.97119141 11.22705078 C28 11 28 11 26 9 C25.75 5.5 25.75 5.5 26 2 C28.59893809 -0.59893809 29.69978722 -0.26714515 33.32006836 -0.30639648 C34.43139633 -0.32238388 35.5427243 -0.33837128 36.68772888 -0.35484314 C37.89292679 -0.36020584 39.09812469 -0.36556854 40.33984375 -0.37109375 C41.57287735 -0.38012222 42.80591095 -0.3891507 44.0763092 -0.39845276 C46.6881364 -0.41298247 49.30000023 -0.42184871 51.91186523 -0.42553711 C54.59423122 -0.42985392 57.27564182 -0.45075723 59.95776367 -0.48706055 C63.81459063 -0.53568299 67.67024271 -0.55130649 71.52734375 -0.55859375 C72.73051743 -0.57812607 73.9336911 -0.59765839 75.17332458 -0.61778259 C76.84504478 -0.608666 76.84504478 -0.608666 78.55053711 -0.59936523 C79.53267685 -0.60443588 80.51481659 -0.60950653 81.52671814 -0.61473083 C84 -0 84 -0 85.88746643 2.36558533 C87 5 87 5 86.25 7.75 C85 10 85 10 84 11 C77.73 11 71.46 11 65 11 C65 38.39 65 65.78 65 94 C50 101 50 101 48 101 C47.67 76.91 47.34 52.82 47 28 C40.21005081 26.3025127 35.23081133 25.66325549 28.4375 25.6875 C27.0772168 25.66333008 27.0772168 25.66333008 25.68945312 25.63867188 C19.22121146 25.63398134 14.06875309 26.19369325 9.07592773 30.75952148 C6.9867337 32.91407408 4.98480762 35.12403043 3 37.375 C-1.6651253 42.61209469 -6.0303596 47.25405065 -12 51 C-12.66 51 -13.32 51 -14 51 C-14 51.66 -14 52.32 -14 53 C-13.27296875 53.08378906 -12.5459375 53.16757813 -11.796875 53.25390625 C-8.38564153 54.16388613 -6.82732568 55.54126093 -4.25 57.9375 C-3.08210938 59.00291016 -3.08210938 59.00291016 -1.890625 60.08984375 C5.58235379 67.46367855 11.85386802 75.28889956 17.57122803 84.09390259 C18.72047074 85.86326131 19.88063977 87.62503486 21.04345703 89.38549805 C24.04495754 93.93535326 27.02523132 98.49881326 29.99365234 103.0703125 C49.35516325 133.66191143 49.35516325 133.66191143 80 151 C79.99000725 150.13034355 79.99000725 150.13034355 79.97981262 149.24311829 C79.91234533 143.09255648 79.86774922 136.94210309 79.83520508 130.79125977 C79.82031347 128.50964068 79.79999346 126.22804917 79.77368164 123.9465332 C79.19931801 72.78312203 79.19931801 72.78312203 96.3125 54.125 C101.63562543 49.19790578 107.1754285 46.80832471 114.4375 46.5625 C127.94877952 47.14585608 138.50538184 53.59671246 147.67578125 63.2421875 C156.63397246 73.87157069 161.90621216 87.06632242 161.3125 101.07421875 C159.37399297 119.22349079 149.33207214 133.65127521 136.0859375 145.63671875 C125.19676418 154.2805504 113.42938821 158.89257953 100 162 C100.20155481 165.57387131 100.40509913 169.14761565 100.61181641 172.72119141 C100.78972675 175.79997587 100.96023774 178.8790603 101.12646484 181.95849609 C101.53477146 189.32812883 102.0236653 196.65353579 102.859375 203.98828125 C103.05104248 205.80428833 103.05104248 205.80428833 103.24658203 207.65698242 C103.49299598 209.91524704 103.77356281 212.17012931 104.09326172 214.41918945 C104.85385104 221.74203232 104.85385104 221.74203232 102.38232422 225.38330078 C100.3532961 227.44250734 98.27937858 229.22520884 96 231 C94.62048819 232.20317979 93.24482602 233.41080434 91.875 234.625 C91.22015625 235.18574219 90.5653125 235.74648438 89.890625 236.32421875 C88.0472144 237.95815087 86.33483838 239.66541022 84.625 241.4375 C82 244 82 244 80 244 C80 217.6 80 191.2 80 164 C76.7 164 73.4 164 70 164 C54.02486323 161.7871621 41.82244661 152.34381672 31.69140625 140.23828125 C21.99809314 127.41087153 14.90415173 112.23257113 7.95703125 97.79296875 C0.82870781 82.99802743 -7.44620036 71.09420468 -23.10546875 64.91015625 C-28.40609605 63.24342729 -33.33651923 62.88098489 -38.875 62.9375 C-40.02742188 62.94652344 -41.17984375 62.95554688 -42.3671875 62.96484375 C-43.67042969 62.98224609 -43.67042969 62.98224609 -45 63 C-43.4140625 57.2578125 -43.4140625 57.2578125 -39.6875 54.9375 C-36.0374421 53.33147452 -32.29307692 51.96911097 -28.5625 50.5625 C-18.86256044 46.88708837 -10.91221249 42.86831874 -5 34 C-3.83847098 30.51541293 -3.86729676 27.73309492 -3.875 24.0625 C-3.87242188 22.83660156 -3.86984375 21.61070313 -3.8671875 20.34765625 C-3.97332465 17.67237569 -4.20082346 15.53072572 -5 13 C-13.25880738 12.05111575 -18.40518691 14.02666389 -25 19 C-26.02435217 19.97503981 -27.03472457 20.96644142 -28 22 C-28.99 21.67 -29.98 21.34 -31 21 C-27.1640122 9.63189033 -12.28841593 -1.8540417 0 0 Z " fill="#F9F9F8" transform="translate(131,50)"/>
@@ -37,12 +45,25 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center space-x-2">
+      <Link href="/" className="flex items-center space-x-2">
           <BandLogo />
-          <span className="font-serif text-xl text-primary sm:text-2xl">
-            <span className="text-brown">||</span>
-            <span className="text-black">THE SURYANSH PROJECT</span>
-            <span className="text-brown-700">||</span>
+          <span className="font-serif text-xl text-black sm:text-2xl">
+            <span className="text-brown inline-block align-middle">||</span> {/* Adjusted class for brown color and made inline-block */}
+            <span className="uppercase inline-flex items-center gap-1 align-middle"> {/* Added flex and gap for word spacing and aligned middle */}
+              <span className="flex items-end"> {/* Aligns the baseline of the letters */}
+                <span className="text-xl sm:text-2xl font-normal leading-none">T</span> {/* Adjusted size for the first letter and removed extra leading */}
+                <span className="text-base sm:text-xl">HE</span> {/* Adjusted size for the rest of the word */}
+              </span>
+              <span className="flex items-end">
+                <span className="text-xl sm:text-2xl font-normal">S</span> {/* Adjusted size for the first letter */}
+                <span className="text-base sm:text-xl">URYANSH</span> {/* Adjusted size for the rest of the word */}
+              </span>
+              <span className="flex items-end">
+                <span className="text-xl sm:text-2xl font-normal">P</span> {/* Adjusted size for the first letter */}
+                <span className="text-base sm:text-xl">ROJECT</span> {/* Adjusted size for the rest of the word */}
+              </span>
+            </span>
+            <span className="text-brown-700 inline-block align-middle">||</span> {/* Aligned middle */}
           </span>
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
@@ -50,17 +71,30 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="inline-block text-sm font-semibold text-black transition duration-300 hover:scale-110 hover:text-primary hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] hover:-translate-y-1"
             >
-              {link.label}
+            <span>
+            <span className="text-base">{link.label.charAt(0)}</span>
+            <span>{link.label.slice(1)}</span>
+            </span>
             </Link>
           ))}
         </nav>
         <div className="flex items-center space-x-4">
-           <Button asChild className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="/contact">Get Quote</Link>
-          </Button>
+ {/* Social Media Icons */}
+ <div className="hidden md:flex items-center space-x-4">
+          {socialLinks.map((social) => (
+ <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-black hover:text-primary transition-colors">
+ <social.icon className="h-6 w-6" />
+ </Link>
+          ))}
+ </div>
+        <Button asChild 
+ className="hidden sm:inline-flex bg-black hover:bg-primary/90 text-white active:bg-gray-500">
+ <Link href="/contact">Get Quote</Link>
+ </Button>
           <div className="md:hidden">
+
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
@@ -71,13 +105,15 @@ export function Header() {
               <SheetContent side="right">
                 <div className="grid gap-4 py-6">
                   {navLinks.map((link) => (
-                    <Link
+                <Link
                       key={link.href}
                       href={link.href}
-                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
+ className="text-lg font-semibold text-black transition-colors hover:text-primary"
+                      onClick={() => setIsOpen(false)}>
+                    <span>
+                    <span className="text-xl">{link.label.charAt(0)}</span>
+                    <span>{link.label.slice(1)}</span>
+                    </span>
                     </Link>
                   ))}
                   <Button asChild className="mt-4 bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => setIsOpen(false)}>
