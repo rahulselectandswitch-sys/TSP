@@ -4,12 +4,14 @@ import { CalendarDays, MapPin, Music } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const videos = [
-  { videoId: 'LRVeMzzPans', title: 'Live at the Grand Theater' },
-  { videoId: 'WT1o011upGA', title: 'Unplugged Session' },
-  { videoId: 'jini5G6nk1E', title: 'Festival Highlights' },
-  { videoId: 'OZnfLvs2NlU', title: 'Soulful Sundays' },
-  { videoId: 'YzVgN6q_E0A', title: 'Retro Fusion' },
-  { videoId: 'kyQEIUCoF0o', title: 'Encore Performance' },
+  { videoId: 'WT1o011upGA', title: 'Live at the Grand Theater' },
+  { videoId: 'mTJmeegEbkk', title: 'The Suryansh Project | Super Ensemble' },
+  { videoId: 'jini5G6nk1E', title: 'Punjabi Mixtape | Live Showreel 2024' },
+  { videoId: 'YzVgN6q_E0A', title: 'POPMIX | Live Showreel 2024 ' },
+  { videoId: 'Ae_U1YT03gY', title: 'Sab Jag Soye | Live at The Piano Man' },
+  { videoId: 'rywTJcChjIM', title: 'Kadi Aavo Ni | The Suryansh Project Live' },
+  { videoId: 'fNHatg48Cis', title: 'Sab Jag Soye | All About Dance and Music' },
+  { videoId: 'LRVeMzzPans', title: 'Half Love | The Suryansh Project Originals | 2024' },
 ];
 
 const galleryImages = [

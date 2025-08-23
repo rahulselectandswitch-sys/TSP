@@ -48,15 +48,15 @@ export function Header() {
       <Link href="/" className="flex items-center space-x-2">
           <BandLogo />
           <span className="font-serif text-xl text-black sm:text-2xl">
-            <span className="text-brown inline-block align-middle">||</span> {/* Adjusted class for brown color and made inline-block */}
+            <span className="text-brown inline-block align-middle text-lg sm:text-xl">||</span> {/* Adjusted class for brown color and made inline-block */}
             <span className="uppercase inline-flex items-center gap-1 align-middle"> {/* Added flex and gap for word spacing and aligned middle */}
               <span className="flex items-end"> {/* Aligns the baseline of the letters */}
-                <span className="text-xl sm:text-2xl font-normal leading-none">T</span> {/* Adjusted size for the first letter and removed extra leading */}
-                <span className="text-base sm:text-xl">HE</span> {/* Adjusted size for the rest of the word */}
+                <span className="text-lg sm:text-xl font-normal leading-none">T</span> {/* Adjusted size for the first letter and removed extra leading */}
+                <span className="text-sm sm:text-base">HE</span> {/* Adjusted size for the rest of the word */}
               </span>
               <span className="flex items-end">
-                <span className="text-xl sm:text-2xl font-normal">S</span> {/* Adjusted size for the first letter */}
-                <span className="text-base sm:text-xl">URYANSH</span> {/* Adjusted size for the rest of the word */}
+                <span className="text-lg sm:text-xl font-normal">S</span> {/* Adjusted size for the first letter */}
+                <span className="text-sm sm:text-base">URYANSH</span> {/* Adjusted size for the rest of the word */}
               </span>
               <span className="flex items-end">
                 <span className="text-xl sm:text-2xl font-normal">P</span> {/* Adjusted size for the first letter */}
@@ -64,7 +64,7 @@ export function Header() {
               </span>
             </span>
             <span className="text-brown-700 inline-block align-middle">||</span> {/* Aligned middle */}
-          </span>
+          </span> {/* Added margin to the right */}
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
           {navLinks.map((link) => (
