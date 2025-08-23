@@ -16,11 +16,12 @@ const videos = [
 
 const galleryImages = [
   { src: '/gallery/photo1.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
-  { src: '/gallery/photo2.jpg', alt: 'Close-up of a guitarist playing', aiHint: 'guitarist solo' },
-  { src: '/gallery/photo3.jpg', alt: 'Lead singer in a passionate performance', aiHint: 'singer portrait' },
-  { src: '/gallery/photo4.jpg', alt: 'Drummer in action during a concert', aiHint: 'drummer action' },
-  { src: '/gallery/photo5.jpg', alt: 'The full band posing for a photo', aiHint: 'band portrait' },
-  { src: '/gallery/photo6.jpg', alt: 'Audience enjoying the show', aiHint: 'concert crowd' },
+  { src: '/gallery/photo2.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
+  { src: '/gallery/photo3.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
+  { src: '/gallery/photo4.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
+  { src: '/gallery/photo6.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
+  { src: '/gallery/photo5.jpg', alt: 'Band performing on stage with blue lights', aiHint: 'band performance' },
+
 ];
 
 const recentEvents = [
@@ -93,40 +94,28 @@ export function Gallery() {
             </div>
           </TabsContent>
 
-          <TabsContent value="photos" className="mt-8">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {galleryImages.map((image, index) => (
-                <div key={index} className="group relative aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint={image.aiHint}
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                </div>
-              ))}
-            </div>
-          </TabsContent>
 
-          <TabsContent value="events" className="mt-8">
-            <div className="max-w-2xl mx-auto">
-                <ul className="space-y-6">
-                {recentEvents.map((event, index) => (
-                    <li key={index} className="flex items-center p-4 bg-card rounded-lg shadow-md">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground mr-6">
-                            <event.icon className="h-6 w-6" />
-                        </div>
-                        <div>
-                            <h4 className="text-lg font-bold text-foreground">{event.title}</h4>
-                            <p className="text-sm text-muted-foreground">{event.location} - {event.date}</p>
-                        </div>
-                    </li>
-                ))}
-                </ul>
-            </div>
-          </TabsContent>
+          <TabsContent value="photos" className="mt-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            {galleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="group relative aspect-video overflow-hidden rounded-lg shadow-lg"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  data-ai-hint={image.aiHint}
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+              </div>
+            ))}
+          </div>
+        </TabsContent>
+
 
           <TabsContent value="album" className="mt-8">
             <div className="flex justify-center">

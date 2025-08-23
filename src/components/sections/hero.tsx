@@ -60,7 +60,7 @@
             className="bg-gray-700 hover:bg-primary text-white hover:text-primary-foreground transition-transform duration-300 hover:scale-105"
           >
             <Link
-              href="https://drive.google.com/drive/u/0/folders/13-xJFPxcBD57bMMf1V20e7DBgjwOvUN8"
+              href="https://drive.google.com/drive/folders/1Wz4As0VFWOtMl3AI9ChjIEqUx061zJ6G"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,8 +72,13 @@
             asChild
             size="lg"
             className="bg-gray-700 hover:bg-primary text-white hover:text-primary-foreground transition-transform duration-300 hover:scale-105"
+
           >
-            <Link href="/contact">Catch Us</Link>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfETQYddhWVVOZNyKEzlhZQqIxFcEwwwuaank4i2T8GF9ICNg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Catch Us</Link>
           </Button>
         </div>
         
