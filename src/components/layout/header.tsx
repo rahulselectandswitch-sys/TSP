@@ -47,24 +47,24 @@ export function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <Link href="/" className="flex items-center space-x-2">
           <BandLogo />
-          <span className="font-serif text-xl text-black sm:text-2xl">
-            <span className="text-brown inline-block align-middle text-lg sm:text-xl">||</span> {/* Adjusted class for brown color and made inline-block */}
-            <span className="uppercase inline-flex items-center gap-1 align-middle"> {/* Added flex and gap for word spacing and aligned middle */}
-              <span className="flex items-end"> {/* Aligns the baseline of the letters */}
-                <span className="text-lg sm:text-xl font-normal leading-none">T</span> {/* Adjusted size for the first letter and removed extra leading */}
-                <span className="text-sm sm:text-base">HE</span> {/* Adjusted size for the rest of the word */}
+          <span className="font-serif text-lg text-black sm:text-xl flex items-center">
+            <span className="text-brown inline-block align-middle text-md sm:text-lg">||</span>
+            <span className="uppercase inline-flex items-center gap-1 align-middle"> 
+              <span className="flex items-end">
+                <span className="text-md sm:text-lg font-normal leading-none">T</span> 
+                <span className="text-xs sm:text-sm">HE</span> 
               </span>
               <span className="flex items-end">
-                <span className="text-lg sm:text-xl font-normal">S</span> {/* Adjusted size for the first letter */}
-                <span className="text-sm sm:text-base">URYANSH</span> {/* Adjusted size for the rest of the word */}
+                <span className="text-md sm:text-lg font-normal">S</span> 
+                <span className="text-xs sm:text-sm">URYANSH</span> 
               </span>
               <span className="flex items-end">
-                <span className="text-xl sm:text-2xl font-normal">P</span> {/* Adjusted size for the first letter */}
-                <span className="text-base sm:text-xl">ROJECT</span> {/* Adjusted size for the rest of the word */}
+                <span className="text-lg sm:text-xl font-normal">P</span> 
+                <span className="text-sm sm:text-base">ROJECT</span> 
               </span>
             </span>
-            <span className="text-brown-700 inline-block align-middle">||</span> {/* Aligned middle */}
-          </span> {/* Added margin to the right */}
+            <span className="text-brown-700 inline-block align-middle">||</span>
+          </span>
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
           {navLinks.map((link) => (
