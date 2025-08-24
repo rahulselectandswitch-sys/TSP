@@ -49,19 +49,8 @@ export function Header() {
           <BandLogo />
           <span className="font-serif text-black flex items-center">
             <span className="text-brown-700 inline-block align-middle text-sm sm:text-base">||</span>
-            <span className="uppercase inline-flex items-baseline gap-1 align-middle mx-1"> 
-              <span className="flex items-end">
-                <span className="text-sm sm:text-base font-normal leading-none">T</span> 
-                <span className="text-[0.6rem] sm:text-xs">HE</span> 
-              </span>
-              <span className="flex items-end">
-                <span className="text-sm sm:text-base font-normal">S</span> 
-                <span className="text-[0.6rem] sm:text-xs">URYANSH</span> 
-              </span>
-              <span className="flex items-end">
-                <span className="text-sm sm:text-base font-normal">P</span> 
-                <span className="text-[0.6rem] sm:text-xs">ROJECT</span> 
-              </span>
+            <span className="uppercase inline-flex items-baseline align-middle mx-1 text-sm sm:text-base font-normal">
+              THE SURYANSH PROJECT
             </span>
             <span className="text-brown-700 inline-block align-middle text-sm sm:text-base">||</span>
           </span>
