@@ -47,23 +47,23 @@ export function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <Link href="/" className="flex items-center space-x-2">
           <BandLogo />
-          <span className="font-serif text-lg text-black sm:text-xl flex items-center">
-            <span className="text-brown inline-block align-middle text-md sm:text-lg">||</span>
-            <span className="uppercase inline-flex items-center gap-1 align-middle"> 
+          <span className="font-serif text-black flex items-center">
+            <span className="text-brown-700 inline-block align-middle text-sm sm:text-base">||</span>
+            <span className="uppercase inline-flex items-baseline gap-1 align-middle mx-1"> 
               <span className="flex items-end">
-                <span className="text-md sm:text-lg font-normal leading-none">T</span> 
-                <span className="text-xs sm:text-sm">HE</span> 
+                <span className="text-sm sm:text-base font-normal leading-none">T</span> 
+                <span className="text-[0.6rem] sm:text-xs">HE</span> 
               </span>
               <span className="flex items-end">
-                <span className="text-md sm:text-lg font-normal">S</span> 
-                <span className="text-xs sm:text-sm">URYANSH</span> 
+                <span className="text-sm sm:text-base font-normal">S</span> 
+                <span className="text-[0.6rem] sm:text-xs">URYANSH</span> 
               </span>
               <span className="flex items-end">
-                <span className="text-lg sm:text-xl font-normal">P</span> 
-                <span className="text-sm sm:text-base">ROJECT</span> 
+                <span className="text-sm sm:text-base font-normal">P</span> 
+                <span className="text-[0.6rem] sm:text-xs">ROJECT</span> 
               </span>
             </span>
-            <span className="text-brown-700 inline-block align-middle">||</span>
+            <span className="text-brown-700 inline-block align-middle text-sm sm:text-base">||</span>
           </span>
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
