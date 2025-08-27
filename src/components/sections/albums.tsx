@@ -11,10 +11,10 @@ const albums = [
     tracks: [" Echoes through cords"],
   },
   {
-    title: "Urban Soulscape",
+    title: "The Suryansh Project-original",
     releaseDate: "Oct 3, 2024",
     videoId: "LRVeMzzPans",
-    tracks: ["Urban Mix tap"],
+    tracks: ["The Original Music"],
   },
   {
     title: "Rajasthan folk fusion Live",

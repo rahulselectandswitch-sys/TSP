@@ -16,9 +16,9 @@
           />
         <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="z-10 relative px-4 flex flex-col items-center">
+      <div className="z-10 relative px-4 flex flex-col items-center mt-20">
               {/* Circle wrapper */}
-              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-black overflow-hidden mb-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-black overflow-hidden mb-4 mt-18">
                 {/* SVG logo */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
