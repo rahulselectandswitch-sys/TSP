@@ -10,7 +10,7 @@ const videos = [
   { videoId: 'YzVgN6q_E0A', title: 'POPMIX | Live Showreel 2024 ' },
   { videoId: 'Ae_U1YT03gY', title: 'Sab Jag Soye | Live at The Piano Man' },
   { videoId: 'rywTJcChjIM', title: 'Kadi Aavo Ni | The Suryansh Project Live' },
-  { videoId: 'fNHatg48Cis', title: 'Sab Jag Soye | All About Dance and Music' },
+  { videoId: 'Er_PMVHMRB8', title: 'Udaipur Live Showreel | 2023' },
   { videoId: 'LRVeMzzPans', title: 'Half Love | The Suryansh Project Originals | 2024' },
 ];
 

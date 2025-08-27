@@ -5,10 +5,10 @@ import { Play } from "lucide-react";
 
 const albums = [
   {
-    title: "Echoes in Silence",
+    title: "Live Show Reel",
     releaseDate: "16th Nov 2024",
-    videoId: "Ae_U1YT03gY",
-    tracks: [" Echoes through cords"],
+    videoId: "Er_PMVHMRB8",
+    tracks: [" Echoes in Udaipur"],
   },
   {
     title: "The Suryansh Project-original",

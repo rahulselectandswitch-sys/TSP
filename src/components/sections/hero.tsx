@@ -18,7 +18,7 @@
       </div>
       <div className="z-10 relative px-4 flex flex-col items-center mt-20">
               {/* Circle wrapper */}
-              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-black overflow-hidden mb-4 mt-18">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-black overflow-hidden mb-4 mt-20">
                 {/* SVG logo */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
