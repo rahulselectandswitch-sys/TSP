@@ -12,13 +12,13 @@ const albums = [
   },
   {
     title: "Urban Soulscape",
-    releaseDate: "March 15, 2022",
+    releaseDate: "Oct 3, 2024",
     videoId: "LRVeMzzPans",
     tracks: ["Urban Mix tap"],
   },
   {
-    title: "The Fireside Sessions",
-    releaseDate: "November 01, 2020",
+    title: "Rajasthan folk fusion Live",
+    releaseDate: "16th Nov 2024",
     videoId: "rywTJcChjIM",
     tracks: ["Warmth of the Chord"],
   },
