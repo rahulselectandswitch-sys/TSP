@@ -51,10 +51,10 @@
                   <span className="text-[#8B4513]">||</span>
                 </h1>
 
-        <p className="mt-4 max-w-xs sm:max-w-3xl text-base sm:text-lg text-primary-foreground/90 md:text-xl">
+        <p className="mt-8 max-w-xs sm:max-w-3xl text-base sm:text-lg text-primary-foreground/90 md:text-xl">
         Blending Sufi, Folk & Bollywood into Pure Magic
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="mt-24 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button
             asChild
             size="lg"

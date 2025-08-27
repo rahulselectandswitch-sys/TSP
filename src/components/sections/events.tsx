@@ -45,7 +45,7 @@ const eventTypes = [
 
 export function Events() {
   return (
-    <section id="events" className="py-16 sm:py-24 bg-card">
+    <section id="events" className="py-1 sm:py-24 bg-card">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl">

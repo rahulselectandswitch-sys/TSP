@@ -9,14 +9,14 @@ const highlights = [
   },
   {
     icon: Music,
-    title: 'Versatile Musical Range',
-    description: 'Spanning genres and eras, from classics to hits, tailored for every occasion',
+    title: 'Sound of Coke Studio - Live',
+    description: 'Versatile Musical Range',
     videoId: 'Ae_U1YT03gY',
   },
   {
     icon: Users,
     title: 'Flexible Configurations',
-    description: 'Scalable setups from duo to full band, tailored to match every event.\'s ambiance.',
+    description: ' Flexible and Diverse configuration',
     videoId: 'AesTwpDDsNU',
   },
 ];
